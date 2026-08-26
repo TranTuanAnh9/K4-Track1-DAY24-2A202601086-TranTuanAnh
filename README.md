@@ -1,9 +1,59 @@
 # 🎓 VinUniversity AI Talent Program — Track 1: AI Product Management
 ## Day 24: AI Product Financial Model & Unit Economics Lab!
 
-> **Brief (Triết lý bài học):** Một sản phẩm AI có RAG/Agent chạy mượt ở Day 23 mới chỉ là thành công về kỹ thuật. Để sản phẩm sống sót và tăng trưởng thương mại, PM/Founder bắt buộc phải giải bài toán tài chính: Tính đúng chi phí biến đổi COGS (đặc biệt là AI Hidden Costs), làm chủ Unit Economics (CAC, LTV, Gross Margin), và thực hiện stress-test dòng tiền 3 kịch bản (Optimistic, Base, Pessimistic) để chứng minh khả năng sinh tồn (Runway ≥ 12 tháng).
+---
+
+# 📝 THÔNG TIN BÀI NỘP LAB DAY 24
+
+* **Họ và tên:** Trần Tuấn Anh
+* **Mã số sinh viên (MSSV):** 2A202601086
+* **Chương trình:** VinUni AI Talent Incubation (Track 1 — AI Product Management)
+* **Tên dự án AI:** **SmartSupport AI** — Trợ lý CSKH & Bán hàng Tự động 24/7 cho Doanh nghiệp vừa & nhỏ (B2B SME)
+* **File Excel mô hình tài chính:** [Day24-AI-Product-Finance-Model.xlsx](file:///d:/DAY24/K4-Track1-DAY24-2A202601086-TranTuanAnh/Day24-AI-Product-Finance-Model.xlsx) (và bản sao chuẩn [2A202601086_TranTuanAnh_Day24.xlsx](file:///d:/DAY24/K4-Track1-DAY24-2A202601086-TranTuanAnh/2A202601086_TranTuanAnh_Day24.xlsx))
 
 ---
+
+## 📌 PHẢM VI & MÔ HÌNH KINH DOANH (PHASE 0)
+1. **Sản phẩm AI:** SmartSupport AI — Giải pháp RAG & Multi-Agent Assistant kết hợp tự động tư vấn, tra cứu đơn hàng và hỗ trợ khách hàng trên Zalo/Messenger/Website.
+2. **Target Customer / Persona:** B2B SME (Chủ doanh nghiệp bán lẻ, shop online thương mại điện tử vừa và nhỏ tại Việt Nam).
+3. **Mô hình Thu tiền (Revenue Model):** **Hybrid Pricing** — Phí cố định hàng tháng (Base Tier: 159,000 VND/tháng cho 1,000 tin nhắn) + Phí Overage (usage-based) cho lượng hội thoại vượt định mức. Mô hình này vừa đảm bảo dòng tiền dự đoán được (predictable MRR), vừa bảo vệ Gross Margin khỏi bẫy lỗ từ các Heavy Users.
+4. **TAM (Total Addressable Market):** ~10,000 shop online & doanh nghiệp SME mục tiêu tại thị trường Việt Nam giai đoạn đầu.
+
+---
+
+## 📊 BẢNG TỔNG HỢP GIẢ ĐỊNH TÀI CHÍNH 3 KỊCH BẢN (TAB 1 & TAB 2)
+
+| Chỉ số / Cấu phần | Kịch bản Optimistic | Kịch bản Base | Kịch bản Pessimistic | Ghi chú & Căn cứ / Benchmark |
+|---|---:|---:|---:|---|
+| **ARPU / tháng** | 299,000 VND | 159,000 VND | 129,000 VND | Gói Base SME SaaS Việt Nam |
+| **API Cost / tháng** | 10,000 VND | 8,800 VND | 8,800 VND | OpenAI gpt-4o-mini + embedding API |
+| **AI Hidden Costs / tháng** | 50,000 VND | 40,000 VND | 40,000 VND | Labeling, Fine-tuning ~20%/năm, QA (**454.5% API Cost ≥ 30%**) |
+| **Infra Cloud Cost / tháng** | 8,000 VND | 5,000 VND | 5,000 VND | Cloud Server Vector DB & Hosting |
+| **Tổng COGS / tháng** | 68,000 VND | 53,800 VND | 53,800 VND | Chi phí biến đổi trực tiếp / khách |
+| **Gross Margin (%)** | **77.3%** | **66.2%** | **58.3%** | AI Target benchmark: 40% – 60% |
+| **Monthly Churn Rate** | 7.0% | 10.0% | **15.0%** | **Pessimistic Shock 1.5x Base Churn** |
+| **CAC (Chi phí thu hút)** | 500,000 VND | 320,000 VND | **480,000 VND** | **Pessimistic Shock 1.5x Base CAC** |
+| **LTV (Lãi gộp tích lũy)** | 3,300,000 VND | 1,052,000 VND | 501,333 VND | LTV = Gross Profit × (1 / Churn) |
+| **LTV / CAC Ratio** | **6.60x** | **3.29x** | **1.04x** | **Base Target > 3.0x (Healthy)** |
+| **CAC Payback Period** | **2.2 tháng** | **3.0 tháng** | **6.4 tháng** | **Base Target < 12 tháng (Healthy)** |
+| **Pessimistic Runway** | **> 24 tháng** | **> 24 tháng** | **19 tháng** | **Đạt tiêu chuẩn sinh tồn Runway ≥ 12 tháng** |
+
+---
+
+## 📄 DECISION NOTE — BÁO CÁO BẢO VỆ MÔ HÌNH TRƯỚC NHÀ ĐẦU TƯ / VC (PHASE 4)
+
+> **Kính gửi Hội đồng Đầu tư / Nhà đầu tư VC,**
+> 
+> Chúng tôi lựa chọn **Mô hình Hybrid Pricing** với giá gói Base **159,000 VND/tháng** dựa trên benchmark các công cụ AI SaaS E-commerce tại thị trường Việt Nam (tương đương Gói Starter của các nền tảng Chatbot/Virtual Assistant cho SME), kết hợp phí Overage theo dung lượng tin nhắn. Mức giá này giúp tối ưu hóa tỷ lệ chuyển đổi khách hàng ban đầu, đồng thời tạo nguồn thu MRR cố định dự đoán trước và bảo vệ Gross Margin khỏi bẫy lỗ do các nhóm "Power Users" gây ra. Chi phí thu hút khách hàng (**CAC Base = 320,000 VND**) được tối ưu nhờ tập trung vào kênh Content Marketing Inbound, SEO và hợp tác cùng các đối tác phân phối nền tảng bán hàng.
+> 
+> Để đảm bảo tính bền vững của sản phẩm AI, chúng tôi dự phòng **AI Hidden Costs ở mức 40,000 VND/khách/tháng (gấp 4.54 lần API Cost thô 8,800 VND)**. Ngân sách này phục vụ hoạt động Data Labeling, Fine-tuning/Retraining model định kỳ 3 tháng/lần (chiếm ~20% chi phí vận hành hàng năm) và quy trình Human-in-the-loop QA do đội ngũ Operations chuyên trách thực hiện nhằm duy trì độ chính xác của mô hình RAG, loại bỏ hiện tượng Hallucination và suy giảm chất lượng phản hồi (accuracy drift). Dù tính đầy đủ chi phí ẩn, mô hình vẫn duy trì **Gross Margin ấn tượng 66.2%**.
+> 
+> Ở kịch bản Cơ sở (Base Case), mô hình đạt tỷ lệ **LTV/CAC = 3.29x** (vượt tiêu chuẩn vàng VC > 3.0x) và **CAC Payback Period = 3.0 tháng** (thấp hơn nhiều ngưỡng 12 tháng). Trong kịch bản Xấu nhất (Pessimistic Stress-Test với shock kép: **Churn tăng 1.5 lần lên 15%/tháng** và **CAC tăng 1.5 lần lên 480,000 VND**), nhờ nguồn vốn dự trữ 1.2 tỷ VND, **Runway sinh tồn vẫn đạt 19 tháng** (đảm bảo vượt ngưỡng an toàn tối thiểu 12 tháng). Nếu kịch bản xấu kéo dài, Plan B là lập tức kích hoạt chính sách thắt chặt chi phí cố định (cắt giảm Marketing budget xuống 5 triệu/tháng) và tập trung giữ chân nhóm khách hàng cốt lõi có Retention Rate cao nhất.
+> 
+> **Kết luận:** Mô hình tài chính của SmartSupport AI đạt trạng thái **HEALTHY**, có tính khả thi thương mại cao, kiểm soát tốt chi phí ẩn AI và có khả năng chống chịu rủi ro dòng tiền vượt trội.
+
+---
+
 
 ## 🎯 1. Tiêu Đề & Mục Tiêu Tổng Quan (Header & Objectives)
 
