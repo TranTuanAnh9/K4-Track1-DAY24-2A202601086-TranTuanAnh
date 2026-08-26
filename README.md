@@ -9,7 +9,7 @@
 * **Mã số sinh viên (MSSV):** 2A202601086
 * **Chương trình:** VinUni AI Talent Incubation (Track 1 — AI Product Management)
 * **Tên dự án AI:** **SmartSupport AI** — Trợ lý CSKH & Bán hàng Tự động 24/7 cho Doanh nghiệp vừa & nhỏ (B2B SME)
-* **File Excel mô hình tài chính:** [Day24-AI-Product-Finance-Model.xlsx](file:///d:/DAY24/K4-Track1-DAY24-2A202601086-TranTuanAnh/Day24-AI-Product-Finance-Model.xlsx) | [TranTuanAnh_Day24.xlsx](file:///d:/DAY24/K4-Track1-DAY24-2A202601086-TranTuanAnh/TranTuanAnh_Day24.xlsx) | [2A202601086_TranTuanAnh_Day24.xlsx](file:///d:/DAY24/K4-Track1-DAY24-2A202601086-TranTuanAnh/2A202601086_TranTuanAnh_Day24.xlsx)
+* **File Excel mô hình tài chính:** [TranTuanAnh_Day24.xlsx](file:///d:/DAY24/K4-Track1-DAY24-2A202601086-TranTuanAnh/TranTuanAnh_Day24.xlsx)
 
 ---
 
