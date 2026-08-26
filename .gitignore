@@ -1,7 +1,0 @@
-# Temporary & OS files
-~$*.xlsx
-~$*.docx
-~$*.pptx
-.DS_Store
-Thumbs.db
-node_modules/
